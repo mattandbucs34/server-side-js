@@ -12,5 +12,16 @@ var reverseString = (userInput) => {
   return revString;
 };
 
+/* Suggested Solution
+
+  function reverseString(inputString) {
+    var sentenceWords = inputString.split(' ');
+    var returnSentence = [];
+    sentenceWords.forEach(word => returnSentence.push(word.split('').reverse().join('')));
+    returnSentence = returnSentence.join(' ');
+    return returnSentence;
+  })
+
+*/
 
 console.log(reverseString("My name is Matt"));
